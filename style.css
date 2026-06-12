@@ -1,0 +1,192 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+.navbar{
+background:#000000cc;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.5),
+rgba(0,0,0,.5)),
+url("./images/Picture.png")
+center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero-content h1{
+font-size:4rem;
+animation:slideDown 1s ease;
+}
+
+.hero-content p{
+font-size:1.2rem;
+margin:20px 0;
+}
+
+@keyframes slideDown{
+from{
+transform:translateY(-50px);
+opacity:0;
+}
+to{
+transform:translateY(0);
+opacity:1;
+}
+}
+
+.features{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+margin-top:20px;
+}
+
+.feature{
+background:#f4f4f4;
+padding:15px;
+border-radius:10px;
+flex:1 1 200px;
+text-align:center;
+}
+
+.rooms{
+background:#f8f9fa;
+}
+
+.room-card{
+transition:.4s;
+}
+
+.room-card:hover{
+transform:translateY(-10px);
+}
+
+.room-card img{
+height:250px;
+object-fit:cover;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+}
+
+.gallery img{
+width:350px;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.review{
+background:white;
+padding:25px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.testimonials{
+background:#f8f9fa;
+}
+
+footer{
+background:#111;
+color:white;
+padding:30px;
+}
+
+.footer-flex{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+footer i{
+font-size:25px;
+margin-right:15px;
+cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:2.5rem;
+}
+
+.gallery img{
+width:100%;
+}
+
+.footer-flex{
+flex-direction:column;
+text-align:center;
+gap:20px;
+}
+
+}
+
+
+.modal-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
