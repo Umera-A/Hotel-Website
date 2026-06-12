@@ -4,7 +4,6 @@ A modern and responsive hotel website built using HTML, CSS, Bootstrap 5, and Ja
 *Features
 ✔️ Fully Responsive Design
 ✔️ Room Showcase Section
-✔️ Rooms
 ✔️ Hotel Gallery
 ✔️ Guest Reviews Section
 ✔️ Contact Form
